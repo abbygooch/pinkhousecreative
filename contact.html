@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us | Pink House Creative</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="services.html">OUR SERVICES</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>If you’d like to work together, have a project idea, or just want to chat — send me a message below!</p>
+
+            <form action="https://formspree.io/f/xjkrojze" method="POST" class="contact-form">
+                <label for="name">Name<span style="color:red;">*</span>:</label><br>
+                <input type="text" name="name" id="name" required><br><br>
+
+                <label for="email">Email<span style="color:red;">*</span>:</label><br>
+                <input type="email" name="email" id="email" required><br><br>
+
+                <label for="business">Business name (optional):</label><br>
+                <input type="text" name="business" id="business"><br><br>
+
+                <label>What are you looking for? (You can select more than one):</label><br>
+                <input type="checkbox" name="service" value="Pink House Brand Packet"> Pink House Brand Packet<br>
+                <input type="checkbox" name="service" value="Marketing Materials Bundle"> Marketing Materials Bundle<br>
+                <input type="checkbox" name="service" value="Social Media Starter Kit"> Social Media Starter Kit<br>
+                <input type="checkbox" name="service" value="Website Design"> Website Design<br>
+                <input type="checkbox" name="service" value="Other"> Other (please describe below)<br><br>
+
+                <label for="message">Tell me a little about your project!<span style="color:red;">*</span>:</label><br>
+                <textarea name="message" id="message" rows="6" required></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
